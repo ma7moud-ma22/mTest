@@ -1,0 +1,385 @@
+/* ------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --mainfont:"noto-sans";
+  --B3: #b3b3b3;
+  --ff: #ffffff;
+  --filter: brightness(1.3);
+}
+/* scrollbar cascading */
+::-webkit-scrollbar {
+  background-image: linear-gradient(
+    131.3deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(24, 24, 24, 1) 100%
+  );
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--ff);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--B3);
+}
+::-moz-scrollbar {
+  background-image: linear-gradient(
+    131.3deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(24, 24, 24, 1) 100%
+  );
+  width: 15px;
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--ff);
+  border-radius: 10px;
+}
+::-moz-scrollbar-thumb:hover {
+  background-color: var(--B3);
+}
+@font-face {
+  font-family: "noto-sans";
+  src: url("../Font/Noto_Sans/NotoSans-Bold.ttf");
+  src: url("../Font/Noto_Sans/NotoSans-BoldItalic.ttf");
+  src: url("../Font/Noto_Sans/NotoSans-Italic.ttf");
+  src: url("../Font/Noto_Sans/NotoSans-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-image: linear-gradient(
+    131.3deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(24, 24, 24, 1) 100%
+  );
+  color: white;
+  font-family: var(--mainfont);
+}
+
+/* small screen---------------------- */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* meduim screen---------------------- */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screen ---------------------*/
+@media (min-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+/* /* start header it will deleted later * */
+body > header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-bottom: 1px solid #727272;
+  font-size: 60px;
+}
+/* .-. .-. .-. .-. .-. .-. .-. .-. */
+/* start .discover */
+.discover {
+}
+.discover .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discover .container h1 {
+  font-size: 82px;
+  font-weight: bold;
+  color: var(--ff);
+  width: 70%;
+  margin: 50px 0 0 0;
+  text-align: center;
+  font-family: var(--mainfont);
+}
+.discover .container h1 img {
+  margin: 0;
+  position: relative;
+  left: -20px;
+  top: 20px;
+}
+.discover .container > p {
+  margin-top: 70px;
+  font: 16px normal;
+  font-family: var(--mainfont);
+  color: var(--B3);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.discover .container .start {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.discover .container .start p {
+  font-size: 16px;
+  color: var(--B3);
+}
+.discover .container .start button {
+  background-color: transparent;
+  border: transparent;
+}
+.discover .container .start button img {
+  margin-top: 30px;
+  width: 60px;
+}
+.discover .container .start button img:hover {
+  filter: var(--filter);
+}
+
+/* meduim screen---------------------- */
+@media (max-width: 991px) {
+  .discover .container h1 {
+    width: 100%;
+    font-size: 75px;
+  }
+}
+/* small screen---------------------- */
+@media (max-width: 767px) {
+  .discover .container h1 {
+    width: 100%;
+    font-size: 45px;
+  }
+  .discover .container h1 img {
+    width: 50px;
+    margin: 0;
+    position: relative;
+    left: -9px;
+    top: 15px;
+  }
+  .discover .container > p {
+    width: 100%;
+  }
+}
+/* ----------------------------- */
+/* start section2 */
+.section2 {
+}
+.section2 .container {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section2 .container .left {
+  width: 50%;
+}
+.section2 .left h2 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: var(--mainfont);
+}
+.section2 .left .clickHere {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--B3);
+  line-height: 1.6;
+}
+.section2 .left .clickHere a {
+  color: var(--B3);
+}
+.section2 .left .clickHere a:hover {
+  filter: var(--filter);
+
+}
+.section2 .left .join {
+  text-align: center;
+  font-size: 30px;
+  color: var(--B3);
+  margin-top: 30px;
+  line-height: 1.6;
+}
+.section2 .left .join a img {
+  height: 40px;
+  transform: translatey(25%);
+}
+.section2 .left .join a img:hover {
+  /* filter: var(--filter); */
+    background-color: var(--ff);
+    border-radius: 10px;
+}
+.section2 .right {
+  width: 45%;
+}
+.section2 .right img {
+  width: 100%;
+}
+/* meduim screen---------------------- */
+@media (max-width: 991px) {
+  .section2 .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .section2 .container .left {
+    width: 100%;
+  }
+  .section2 .container .right {
+    margin-bottom: 30px;
+    width: 60%;
+  }
+}
+/* small screen---------------------- */
+@media (max-width: 767px) {
+  .section2 .left h2 {
+    font-size: 40px;
+  }
+}
+
+/* ======================= */
+/* start .section3 */
+
+.section3 .container {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.section3 .container .right {
+  width: 50%;
+}
+.section3 .right h2 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: var(--mainfont);
+}
+.section3 .right .clickHere {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--B3);
+  line-height: 1.6;
+}
+.section3 .right .clickHere a {
+  color: var(--B3);
+}
+.section3 .right .clickHere a:hover {
+  filter: var(--filter);
+}
+.section3 .left {
+  width: 45%;
+}
+.section3 .left img {
+  width: 100%;
+}
+/* meduim screen---------------------- */
+@media (max-width: 991px) {
+  .section3 .container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .section3 .container .right {
+    width: 100%;
+  }
+  .section3 .container .left {
+    margin-bottom: 30px;
+    width: 60%;
+  }
+}
+/* small screen---------------------- */
+@media (max-width: 767px) {
+  .section3 .right h2 {
+    font-size: 40px;
+  }
+}
+
+/* ------------------------- */
+/* start about us */
+.About-Us .container {
+  display: flex;
+  margin-top: 160px;
+  align-items: flex-start;
+}
+.About-Us .content {
+  margin-left: 40px;
+}
+.About-Us .content h2 {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--ff);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.About-Us .content p {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--B3);
+  line-height: 1.6;
+}
+/* meduim screen---------------------- */
+@media (max-width: 991px) {
+  .About-Us img {
+    align-self: center;
+    margin-bottom: 40px;
+  }
+  .About-Us .container {
+    flex-direction: column;
+  }
+  .About-Us .content {
+     margin-left: 0
+  }
+}
+
+/* small screen---------------------- */
+@media (max-width: 767px) {
+  .About-Us img {
+    width: 60%;
+}
+}
+/* ------------------------- */
+/* stat footer */
+footer .container{
+  display: flex;
+      justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    color: var(--B3);
+}
+footer span{
+
+}
+footer p{
+ 
+}
+footer img{
+ transform: rotate(180deg);
+ position: relative;
+ top: -20px;
+}
+footer img:hover{
+  filter: var(--filter);
+}
